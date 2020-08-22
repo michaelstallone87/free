@@ -1,5 +1,11 @@
+from datetime import datetime
+
+
+today = datetime.today().strftime('%c')
+print(f'[today is {today}]')
+
 while True:
-	coffee = 'coffee situation.'
+	coffee = input('coffee situation:\n')
 	if coffee == 'empty':
 		print('fill')
 	elif coffee == 'full':
